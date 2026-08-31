@@ -3,67 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Web Cloud Arcade</title>
+    <title>My Free Roblox Website</title>
     <style>
         body { 
             font-family: 'Segoe UI', Arial, sans-serif; 
             margin: 0; 
             padding: 0; 
-            background-color: #121214; 
+            background-color: #0b0b0c; 
             color: #ffffff; 
             text-align: center; 
         }
         header { 
-            padding: 40px 20px; 
-            background: linear-gradient(135deg, #1f1f23 0%, #161619 100%);
-            border-bottom: 2px solid #2a2a30;
+            padding: 20px; 
+            background-color: #16161a;
+            border-bottom: 2px solid #2d2d34;
         }
-        h1 { margin: 0; font-size: 2.5rem; color: #f74b48; }
-        .arcade-container { 
-            max-width: 500px; 
-            margin: 60px auto; 
-            padding: 40px 20px; 
-            background-color: #1a1a1e; 
-            border-radius: 12px; 
-            box-shadow: 0 8px 24px rgba(0,0,0,0.5);
-            border: 1px solid #2a2a30;
+        h1 { margin: 0; font-size: 2rem; color: #f74b48; }
+        .arcade-frame-wrapper {
+            max-width: 1000px;
+            margin: 25px auto;
+            padding: 10px;
+            background-color: #16161a;
+            border-radius: 12px;
+            border: 1px solid #2d2d34;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.7);
         }
-        .game-title { font-size: 1.8rem; margin-bottom: 10px; font-weight: bold; }
-        .game-desc { color: #b3b3b3; margin-bottom: 30px; font-size: 1rem; line-height: 1.5; }
-        .play-btn { 
-            display: inline-block; 
-            padding: 15px 45px; 
-            background-color: #f74b48; 
-            color: white; 
-            text-decoration: none; 
-            font-weight: bold; 
-            font-size: 1.2rem;
-            border-radius: 30px; 
-            transition: all 0.2s ease;
-            box-shadow: 0 4px 15px rgba(247, 75, 72, 0.4);
-        }
-        .play-btn:hover { 
-            background-color: #ff5f5c; 
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(247, 75, 72, 0.6);
+        iframe {
+            border: none;
+            border-radius: 6px;
+            background-color: #000;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Instant Web Arcade</h1>
-        <p>Launch massive cloud games straight from your website layout 24/7!</p>
+        <h1>My Custom Roblox Web Station</h1>
+        <p>Play Roblox inside my website frame completely free 24/7!</p>
     </header>
 
-    <div class="arcade-container">
-        <div class="game-title">Roblox Cloud Edition</div>
-        <p class="game-desc">Play Roblox directly on high-speed cloud servers without needing downloads or a powerful computer.</p>
-        
-        <!-- target="_blank" opens it securely in a new browser tab to fix the refusal error -->
-        <a href="https://now.gg" target="_blank" class="play-btn">
-            ▶ Play Now on Cloud
-        </a>
+    <div class="arcade-frame-wrapper">
+        <!-- This embeds the EasyFun free cloud engine player natively -->
+        <iframe 
+            src="https://easyfun.gg" 
+            width="100%" 
+            height="650px" 
+            allow="autoplay; gamepad; fullscreen">
+        </iframe>
     </div>
 
 </body>
